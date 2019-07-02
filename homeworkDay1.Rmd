@@ -1,0 +1,197 @@
+---
+title: "Homework1"
+
+output:
+   html_document:
+      theme: cerulean
+      highlight: tango
+      
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Ziyu GUAN 
+Mon,01,Jul
+ 
+```{r time}
+Sys.time()
+```
+
+
+### Introduction 
+
+This is an R Markdown document for the homework1 in summer school. 
+
+
+In this document I will introduce my favorite cartoon character group in ***ONE PIECE*** 
+
+
+They are ***Straw Hat Pirates***
+
+
+This is the structure of my document.
+
+
+1. Introduction
+2. A short video
+#. Group menbers 
+#. R Markdown Syntax
+#. References
+
+
+### A short video
+
+
+<iframe 
+    height=450 
+    width=800 
+    src="https://youtu.be/MLTlH7KB0Xk" 
+    frameborder=0 
+    allowfullscreen>
+</iframe>
+
+
+
+### Group menbers 
+
+![**Monkey.D.Luffy**](C:/Users/ziyu/Documents/GitHub/stat297hw1/Luffypic.jpg)
+
+
+Eating the Gum-Gum Friut gave his whole body the properties of rubber, which makes him virually immune to all blunt force attacks. His dream is to get one piece and become pirate king.
+
+
+>This is a quote
+@article{harrar2013taste,
+  title={The taste of cutlery: how the taste of food is affected by 
+  the weight, size, shape, and colour of the cutlery used to eat it},
+  author={Harrar, Vanessa and Spence, Charles},
+  journal={Flavour},
+  volume={2},
+  number={1},
+  pages={21},
+  year={2013},
+  publisher={BioMed Central}
+}
+
+
+![**Roronoa.Zoro**](C:/Users/ziyu/Documents/GitHub/stat297hw1/Zoro.jpg)
+
+
+
+He is a swordsman and his dearm is to become The World's No.1 Swordsman. 
+
+
+>This is another quote
+@article{harrar2013taste,
+  title={The taste of cutlery: how the taste of food is affected by 
+  the weight, size, shape, and colour of the cutlery used to eat it},
+  author={Harrar, Vanessa and Spence, Charles},
+  journal={Flavour},
+  volume={2},
+  number={1},
+  pages={21},
+  year={2013},
+  publisher={BioMed Central}
+}
+
+A Table of all the team 
+
+Name | Position | Bounty 
+--- | --- | --- 
+Luffy | Captain | 500 million
+Zoro | Swordsman | 300 million
+Nami | Navigator | 96 million
+Sanji | Chef | 100 million
+Usopp | Sniper | 200 million
+Chopper | Doctor | 100
+Robbin | Archeaologist | 100 million
+Frank | Ship Carpenter | 85 million
+Brook | Musician | 98 million
+
+
+
+
+### R Markdown Syntax
+
+
+demonstrate your R Markdown skills.
+
+1.calculate `var(x)` and `mean(x)`
+
+```{r calculate_homework, cache = TRUE}
+n=100
+x=rnorm(n)
+hist(x,col = "pink")
+
+
+mean(x)
+
+var(x)
+
+
+
+```
+
+or just use:
+```r
+var(x)
+```
+
+You can also embed a calculation within the text to show that `r mean(x)` is the mean
+
+
+2.Include equation
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+
+$$a + b$$
+
+
+$$ E\lbrack var \lbrace v_1(\hat{\theta},n\vert \hat{\theta})\rbrace\rbrack=
+var\lbrace v_1(\theta_0,n)\rbrace+O(n_{-2}). $$
+
+
+3. inline equation
+
+
+$$
+A
+$$
+
+
+4.colorful text
+
+
+
+<font color=#0000CD >“Vérité dans un temps, erreur dans un autre.”, Charles de Montesquieu</font>
+
+
+
+5.more info button
+
+<center><button type="button"onclick="alert"('working on update...')"> More info</button></center> 
+
+
+
+6.backgroud colur
+
+
+<table><tr><td bgcolor=#7FFFD4>
+ **some important information:something**
+</td></tr></table>
+
+
+
+<p type="background-color:Green">Some important Info:something</p>
+
+
+### References
+Wikipedia
+
+bibliography: biblio.bib
+Experiment with the Rmd Code below and test output.
+
+Here are some examples: @harrar2013taste ; [see also @harrar2011there].
