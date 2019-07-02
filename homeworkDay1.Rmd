@@ -44,15 +44,7 @@ This is the structure of my document.
 
 ### A short video
 
-
-<iframe 
-    height=450 
-    width=800 
-    src="https://youtu.be/MLTlH7KB0Xk" 
-    frameborder=0 
-    allowfullscreen>
-</iframe>
-
+<iframe width='560' height='315' src='https://www.youtube.com/embed/MLTlH7KB0Xk' frameborder='0' allowfullscreen></iframe>
 
 
 ### Group menbers 
@@ -144,21 +136,16 @@ You can also embed a calculation within the text to show that `r mean(x)` is the
 
 
 2.Include equation
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 
-$$a + b$$
-
-
-$$ E\lbrack var \lbrace v_1(\hat{\theta},n\vert \hat{\theta})\rbrace\rbrack=
-var\lbrace v_1(\theta_0,n)\rbrace+O(n_{-2}). $$
-
-
-3. inline equation
-
-
+$$ 
+E\left [var\left \{ v_1(\hat{\theta},n\vert \hat{\theta} \right \} \right ]= var\lbrace v_1(\theta_0,n)\rbrace+O(n_{-2})
 $$
-A
+3.Inline equation
+
+by online Equation Editor
+$$
+A\equiv[a_{i,j}]_{i,j=1...p}.
 $$
 
 
@@ -172,26 +159,21 @@ $$
 
 5.more info button
 
-<center><button type="button"onclick="alert"('working on update...')"> More info</button></center> 
+<center><button type="button"onclick="alert('working on update...')"> More info</button></center> 
 
 
 
 6.backgroud colur
 
 
-<table><tr><td bgcolor=#7FFFD4>
- **some important information:something**
-</td></tr></table>
 
-
-
-<p type="background-color:Green">Some important Info:something</p>
+<p style="background-color:#7FFFD4">**Some important Info: Something**</p>
 
 
 ### References
 Wikipedia
 
-bibliography: biblio.bib
+
 Experiment with the Rmd Code below and test output.
 
-Here are some examples: @harrar2013taste ; [see also @harrar2011there].
+Here are some examples: 
